@@ -56,7 +56,7 @@ class BlogController extends Controller
             'post' => Post::where('slug', $slug)->first(),
         ];
         // dd($data);
-        return view('post', $slug);
+        return view('pages.post', $slug);
     }
 
     /**

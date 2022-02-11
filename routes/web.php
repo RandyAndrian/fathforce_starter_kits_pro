@@ -21,7 +21,7 @@ Route::get('/', [LandingController::class, 'index']);
 
 Route::get('blog', [BlogController::class, 'index'] );
 
-Route::get('/blog/{slug}', [BlogController::class, 'show']);
+Route::get('/post/{slug}', [BlogController::class, 'show']);
 
 // Route Post
 Route::resource('post', PostController::class);
